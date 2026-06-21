@@ -1,0 +1,23 @@
+name: vd
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch>=2.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - pip:
+    - basicsr==1.4.2
+    - deepspeed==0.18.2
+    - wandb
+    - tqdm
+    - pyyaml
+    - numpy==1.26.4
+    - einops==0.7.0
+    - lpips==0.1.4
+    - addict==2.4.0
+    - ninja==1.11.1.1

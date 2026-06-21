@@ -1,0 +1,9 @@
+version,metric,mean_ms,std_ms,peak_mb
+BEFORE,C1_init,1870.0,,22625.6
+BEFORE,C2_optimize_parameters,80.12,8.58,986.2
+BEFORE,C2_match_stats_subop,0.58,0.73,
+BEFORE,C3_test,24.74,5.66,233.4
+AFTER,C1_init,435.2,,
+AFTER,C2_optimize_parameters,81.80,7.98,986.5
+AFTER,C2_match_stats_subop,0.36,0.25,
+AFTER,C3_test,18.76,1.62,234.2

@@ -1,0 +1,62 @@
+11:27:40  ================================================================
+11:27:40  run_check.py  [AFTER]  device=cuda:0
+11:27:40    warmup=5  reps=10  shape=(1,3,3,256,256)
+11:27:40    log → /media/vilab/osh/vdemoire/base_after/check_results.log
+11:27:40  ================================================================
+11:27:40  
+11:27:40  [PHASE] C1 — __init__  (check=True, 1회, 워밍업 없음)
+11:27:40  Network [MTNet] is created.
+11:27:40  [CHECK] C1 | __init__: get_model_profile → skipped (AFTER)
+11:27:40  Loss [L1Loss] is created.
+11:27:40  Loss [L1Loss] is created.
+11:27:40  Loss [L1Loss] is created.
+11:27:40    전체 __init__ 완료: 435.2 ms
+11:27:40  
+11:27:40  [PHASE] 워밍업 (5 iter, check=False, 미로깅)
+11:27:42  
+11:27:42  [PHASE] C2 — optimize_parameters × 10 (check=True)
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.202 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   86.55ms  peak=   986.4MB  Δmem=    +1.6MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 1.047 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   94.14ms  peak=   985.1MB  Δmem=    +2.6MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.304 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   77.19ms  peak=   985.6MB  Δmem=    +3.1MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.238 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   90.78ms  peak=   984.8MB  Δmem=    +2.4MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.234 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   84.38ms  peak=   986.9MB  Δmem=    +2.6MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.396 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   69.50ms  peak=   987.2MB  Δmem=    +2.6MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.209 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   70.89ms  peak=   987.2MB  Δmem=    +2.4MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.232 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   79.76ms  peak=   987.2MB  Δmem=    +2.4MB
+11:27:42  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.332 ms
+11:27:42  [CHECK] C2 | optimize_parameters (AFTER)                 time=   85.17ms  peak=   987.2MB  Δmem=    +2.4MB
+11:27:43  [CHECK]   └─ _match_stats ×1 [shared, reused for self_recon+decomp]: 0.359 ms
+11:27:43  [CHECK] C2 | optimize_parameters (AFTER)                 time=   79.68ms  peak=   987.2MB  Δmem=    +2.4MB
+11:27:43  
+11:27:43  [PHASE] C3 — test() × 10 (check=True)
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   19.76ms  peak=   234.0MB  Δmem=    +1.6MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   18.22ms  peak=   233.7MB  Δmem=    -0.3MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   18.42ms  peak=   234.5MB  Δmem=    -0.5MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   18.51ms  peak=   234.5MB  Δmem=    +0.8MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   19.18ms  peak=   234.8MB  Δmem=    -0.3MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   17.81ms  peak=   235.2MB  Δmem=    +0.4MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   17.58ms  peak=   234.5MB  Δmem=    -0.9MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   17.50ms  peak=   233.7MB  Δmem=    +0.0MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   17.72ms  peak=   234.5MB  Δmem=    +0.1MB
+11:27:43  [CHECK] C3 | test() [inference_mode, AFTER]              time=   22.89ms  peak=   232.4MB  Δmem=    -0.1MB
+11:27:43  
+11:27:43  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+11:27:43  [SUMMARY]  BEFORE  (warmup=5, reps=10)
+11:27:43  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+11:27:43  항목                                        time (ms, mean±std)    peak (MB, mean)
+11:27:43  ────────────────────────────────────────────────────────────────────
+11:27:43  C1 __init__ (1회 측정, 워밍업 없음)     435.2 ms
+11:27:43  C2 optimize_parameters                81.80 ±  7.98    986.5
+11:27:43     └─ _match_stats (C2 내 서브)       0.36 ±  0.25
+11:27:43  C3 test()                             18.76 ±  1.62    234.2
+11:27:43  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+11:27:43  
+11:27:43  완료 → /media/vilab/osh/vdemoire/base_after/check_results.log
