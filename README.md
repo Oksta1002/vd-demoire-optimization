@@ -104,24 +104,6 @@ conda run -n vd python ../../benchmark/run_benchmark_after.py
 
 ---
 
-## Synthetic Data 생성
-
-벤치마크는 내부적으로 `torch.randn`으로 더미 텐서를 생성합니다 (`benchmark/run_benchmark_*.py` 내 `_data()` 함수):
-
-```python
-def _data(device):
-    B, T, C, H, W = 1, 3, 3, 256, 256
-    return {
-        'lq':        torch.randn(B, T, C, H, W, device=device),
-        'gt':        torch.randn(B,    C, H, W, device=device),
-        'gt_frames': torch.randn(B, T, C, H, W, device=device),
-    }
-```
-
-실제 학습/추론용 데이터셋은 `options/train/*.yml`의 `dataroot_lq` / `dataroot_gt` 경로에 맞춰 준비하십시오.
-
----
-
 ## 전후 코드 비교
 
 핵심 변경 파일만 비교하려면:
